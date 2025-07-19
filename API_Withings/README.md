@@ -1,13 +1,12 @@
 # API Withings
 
-Ce dossier contient le script que j'utilise pour interagir avec l'API Withings.
+Ce dossier contient les scripts suivant :
+- Withings_fetch.py : version finale que j'utilise pour récupérer mes données de l'API Withings
+- Retrieve_tokens.py : que j'ai utilisé pour récupérer mes tokens pour la première fois (access et refresh)
 
-## Ce que le script fait :
+## Ce que le script final fait :
 - Authentification OAuth2 avec rafraîssement automatique des tokens
-- Récupération du poids, masse grasse, hydratation, masse musculaire en kg et en pourcentage
+- Récupération par jour du poids, masse grasse, hydratation, masse musculaire en kg et en pourcentage
 - Export en CSV
 
-## Pour l'utiliser :
-- Copier les tokens depuis Withings Developer Console
-- Coller dans le script `withings_fetch.py`
-- Lancer le script dans un environnement Python
+# Il faut un compte developpeur (gratuit) pour pouvoir intérargir avec l'API : https://developer.withings.com
