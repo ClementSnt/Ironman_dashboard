@@ -9,4 +9,5 @@ Ce dossier contient les scripts suivant :
 - Récupération par jour du poids, masse grasse, hydratation, masse musculaire en kg et en pourcentage
 - Export en CSV
 
-# Il faut un compte developpeur (gratuit) pour pouvoir intérargir avec l'API : https://developer.withings.com
+
+Il faut un compte developpeur (gratuit) pour pouvoir intérargir avec l'API : https://developer.withings.com
