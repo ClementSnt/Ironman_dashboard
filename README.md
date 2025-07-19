@@ -1,5 +1,7 @@
 PERSONAL PERFORMANCE DASHBOARD – VERS L’IRONMAN
 
+⚠️⚠️ PROJET NON TERMINE / EN COURS DE REALISATION ⚠️⚠️
+
 OBJECTIF
 --------
 Ce projet vise à construire un dashboard personnel de suivi sportif centralisant plusieurs dimensions clés de ma préparation à long terme pour un Ironman.
