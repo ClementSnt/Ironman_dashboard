@@ -10,7 +10,7 @@ import plotly.graph_objects as go
 # Import des données
 # ----------------------
 df = pd.read_csv('data/outputIM.csv', sep=";")
-trimp = pd.read_csv("data/training_dashboard/Trimp_plan.csv", sep=";")
+trimp = pd.read_csv("data/Trimp_plan.csv", sep=";")
 
 
 
