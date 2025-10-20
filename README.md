@@ -1,7 +1,7 @@
 # 🏊‍♂️ PERSONAL PERFORMANCE DASHBOARD – IRONMAN 70.3
 
 
-Pour accéder au Dashboard => [Ici]([https://streamlit.io](https://ironmandashboard.streamlit.app/))
+🔗 **[Accéder au dashboard interactif](https://ironmandashboard.streamlit.app/)**
 ---
 
 ## 🎯 OBJECTIF
