@@ -1,48 +1,60 @@
-PERSONAL PERFORMANCE DASHBOARD – VERS L’IRONMAN
+# 🏊‍♂️ PERSONAL PERFORMANCE DASHBOARD – IRONMAN 70.3
 
-⚠️⚠️ PROJET NON TERMINE / EN COURS DE REALISATION ⚠️⚠️
+---
 
-OBJECTIF
---------
-Ce projet vise à construire un dashboard personnel de suivi sportif centralisant plusieurs dimensions clés de ma préparation à long terme pour un Ironman.
+## 🎯 OBJECTIF
 
-Il combine des données issues de la santé connectée, de la météo et de mes activités sportives, afin de :
+Ce projet vise à créer un outil personnel de suivi sportif pour ma préparation à un Ironman 70.3.  
+Il permet de :
 
-- Suivre mes indicateurs de performance au quotidien
-- Visualiser l’évolution de mes KPIs (forme, sommeil, poids, conditions extérieures)
-- Modéliser et prédire mes performances futures (5 km, 10 km, semi-marathon, triathlon)
-- Mieux planifier mes entraînements et anticiper mes pics de forme
+- Suivre l’évolution de la charge d'entraînement semaine par semaine (métrique utilisée => TRIMP)
+- Comparer cette charge d’entraînement avec les recommandations en fonction des semaines avant l’Ironman  
+- Prédire mes temps théoriques sur différentes courses (5 km, 10 km, semi-marathon, marathon, triathlon S M et Ironman 70.3 bien sûr)  
+- Analyser les calories brûlées par activité  
 
-DONNÉES UTILISÉES
------------------
-Le projet s’appuie sur l'extraction automatisée de données via API :
+---
 
-- Strava : Activités sportives (running, vélo…), via Strava API
-- Withings : Poids, composition corporelle, sommeil, via Withings API
-- Meteostat : Température, précipitations, météo quotidienne, via Meteostat API
+## 📊 DONNÉES UTILISÉES
 
-FONCTIONNALITÉS PRÉVUES
-------------------------
-- Extraction automatisée des données (météo, santé, sport)
-- Suivi journalier et hebdomadaire des indicateurs : température, sommeil, fréquence cardiaque, poids, masse musculaire, etc.
-- Visualisations interactives (via Streamlit)
-- Modèles de prédiction de performance future (régression sur données historiques)
-- Analyse de la corrélation entre conditions météo et performance
-- Planification intelligente des entraînements en fonction de l’état de forme et des conditions
+- **Strava API** : activités sportives (running, vélo, natation…) — intégration complète  
+- **Données santé** : extraites via l'API withings mais non visibles dans le dashboard version publique car données trop personnelles. Le code est disponible cependant.
 
-STATUT
-------
-Projet en cours de développement.
-Module météo finalisé.
-Prochaine étape : extraction des données Withings et Strava, puis construction du dashboard interactif avec modèle prédictif intégré.
+> Les fichiers CSV nécessaires sont inclus dans le repo dans le dossier `data/`.
 
-TECHNOLOGIES UTILISÉES
------------------------
-- Python, Pandas, Streamlit
-- Strava API, Withings API, Meteostat API
-- Visualisation avec Plotly / Matplotlib
-- Modélisation : régressions linéaires, modèles personnalisés
+---
 
-OBJECTIF FINAL
---------------
-Créer un outil personnel complet pour m'accompagner dans ma préparation à un Ironman, tout en mettant en valeur mes compétences en data science appliquée, automatisation, visualisation et modélisation prédictive.
+## 🧩 FONCTIONNALITÉS
+
+- **Visualisation de la charge d’entraînement (TRIMP)** vs zone cible  
+- **Répartition des heures d’entraînement** par activité et semaine  
+- **Prédiction des temps de course** (running et triathlon) => méthode utilisée est celle du VDOT + pondération selon les distances connues avec application de malus sur la partie vélo sur triathlon
+- **Analyse des calories brûlées par activité** (treemap interactif)  
+- **Interface interactive Streamlit** avec graphiques Plotly  
+
+---
+
+## 🧠 TECHNOLOGIES
+
+- **Langage** : Python  
+- **Librairies** : Pandas, NumPy, Plotly, Streamlit, math  
+- **Visualisation** : Plotly (line plot, bar chart, treemap)  
+- **Modélisation** : prédiction de temps sur base de VDOT et historique  
+
+---
+
+## 🏁 OBJECTIF FINAL
+
+Un **outil personnel complet** pour suivre et optimiser ma préparation Ironman, visualiser ma charge et mes performances, et explorer les données de mes entraînements.
+
+---
+
+## 🔍 Résultats
+
+Voici les variations que j'ai eu à l'occasion de mon premier triathlon M :
+
+| Discipline  | Prédiction | Réel      | Écart     |
+|------------|------------|-----------|-----------|
+| Natation   | 30:33      | 27:56     | -2:37     |
+| Vélo       | 1:23:15    | 1:28:00   | +4:45     |
+| Course     | 51:36      | 51:12     | -0:24     |
+
